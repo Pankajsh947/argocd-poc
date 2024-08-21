@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/Pankajsh947/argocd-poc.git
-    path: argocd
+    path: Charts/argocd
     targetRevision: HEAD
     helm:
       releaseName: argocd
