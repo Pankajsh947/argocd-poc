@@ -11,6 +11,7 @@ spec:
     path: argocd
     targetRevision: HEAD
     helm:
+      releaseName: argocd
       valueFiles:
         - values.yaml
   destination:
