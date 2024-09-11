@@ -5,7 +5,7 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: Project2
+  project: project1
   source:
     repoURL: https://github.com/Pankajsh947/argocd-poc.git
     path: Charts/hello-world
