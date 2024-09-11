@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Demo-App
+  name: demo-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: Demo-App
+      app: demo-app
   template:
     metadata:
       labels:
-        app: Demo-App
+        app: demo-app
     spec:
       containers:
       - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
-        name: Demo-App
+        name: demo-app
         ports:
         - containerPort: 80
