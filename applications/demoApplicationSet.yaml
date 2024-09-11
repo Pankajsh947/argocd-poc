@@ -13,7 +13,7 @@ spec:
             path: app2
   template:
     metadata:
-      name: '{{cluster}}-application'
+      name: '{{path}}-application'
     spec:
       project: default
       source:
