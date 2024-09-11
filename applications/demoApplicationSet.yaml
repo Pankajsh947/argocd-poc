@@ -22,8 +22,10 @@ spec:
         path: '{{path}}'
       destination:
         server: '{{cluster}}'
-        namespace: default
+        namespace: demoapp
       syncPolicy:
         automated:
           prune: true
           selfHeal: true
+        syncOptions:
+          - CreateNamespace=true
