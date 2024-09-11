@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: demo-applicationset-app
+  namespace: argocd
+spec:
+  generators:
+    - list:
+        elements:
+          - cluster: https://E041F0D0D9743B8356898CC01AFC1F94.gr7.us-east-1.eks.amazonaws.com
+            path: app1
+          - cluster:  https://kubernetes.default.svc
+            path: app2
+  template:
+    metadata:
+      name: '{{cluster}}-application'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/Pankajsh947/argocd-poc.git
+        targetRevision: HEAD
+        path: '{{path}}'
+      destination:
+        server: '{{cluster}}'
+        namespace: default
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
