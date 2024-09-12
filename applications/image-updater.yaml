@@ -7,9 +7,13 @@ metadata:
 spec:
   project: argocd
   source:
-    repoURL: https://argoproj.github.io/argo-helm
-    path: charts/argo-image-updater
+    repoURL: https://github.com/Pankajsh947/argocd-poc.git
+    path: Charts/argocd-image-updater
     targetRevision: HEAD
+    helm:
+      releaseName: argocd-image-updater
+      valueFiles:
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
