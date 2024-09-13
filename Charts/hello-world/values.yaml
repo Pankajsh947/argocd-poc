@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: 058264270539.dkr.ecr.us-east-1.amazonaws.com/argocd-test-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "0.1"
 
 nameOverride: ""
 fullnameOverride: ""

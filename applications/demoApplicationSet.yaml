@@ -16,9 +16,7 @@ spec:
   template:
     metadata:
       name: '{{path}}-application'
-      annotations:
-        argocd-image-updater.argoproj.io/image-list: 058264270539.dkr.ecr.us-east-1.amazonaws.com/argocd-test-app
-        argocd-image-updater.argoproj.io/argocd-test-app.update-strategy: latest
+
     spec:
       project: project2
       source:
