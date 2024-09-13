@@ -5,6 +5,9 @@ metadata:
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: 058264270539.dkr.ecr.us-east-1.amazonaws.com/argocd-test-app
+    argocd-image-updater.argoproj.io/argocd-test-app.update-strategy: latest
 spec:
   generators:
     - list:
