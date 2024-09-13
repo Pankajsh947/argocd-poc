@@ -13,7 +13,7 @@ spec:
         app: demo-app
     spec:
       containers:
-      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
+      - image: 058264270539.dkr.ecr.us-east-1.amazonaws.com/argocd-test-app:0.1
         name: demo-app
         ports:
         - containerPort: 80
