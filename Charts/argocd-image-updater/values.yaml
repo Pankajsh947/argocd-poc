@@ -1,6 +1,6 @@
   # -- Replica count for the deployment. It is not advised to run more than one replica.
 argocd-image-updater:
-  replicaCount: 2
+  replicaCount: 1
   image:
     # -- Default image repository
     repository: quay.io/argoprojlabs/argocd-image-updater
