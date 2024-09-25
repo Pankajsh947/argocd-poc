@@ -5,7 +5,7 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
   annotations:
-    argocd-notifications.argoproj.io/subscribe.on-sync-succeeded.teams: teams
+    notifications.argoproj.io/subscribe.on-sync-succeeded.teams: channelName
 spec:
   project: default
   source:
