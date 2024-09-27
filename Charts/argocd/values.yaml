@@ -3217,7 +3217,7 @@ argo-cd:
         # grafana-apiKey:
         #   # For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/services/grafana/
 
-        channel-teams-url: aHR0cHM6Ly9jbGFyaXZhdGUud2ViaG9vay5vZmZpY2UuY29tL3dlYmhvb2tiMi8yMjI2MzczYy1iM2ZjLTQ4N2QtYWI4MS1hZDFhNDQ2ZmJhZWRAMTI3ZmE5NmUtMDBiNC00MjllLTk1ZjktNzJjMjgyODQzN2E0L0luY29taW5nV2ViaG9vay83ZTQ0Njk5Nzk3Y2I0ZDg0ODk0NGYxZGU2MzJkNTI4Yy9kZDNlYzQ5NS1mYmUwLTQ3OWYtODExYS00YWUwMTg0MjhlZDY=
+        # webhooks-github-token:
 
         # email-username:
         # email-password:
