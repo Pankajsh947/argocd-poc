@@ -3268,8 +3268,8 @@ argo-cd:
     ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/services/overview/
     notifiers: {
       service.teams: |
-        argocd-channel: $channel-teams-url
-       
+        recipientUrls:
+          argocd-channel: $channel-teams-url
     }
       # service.slack: |
       #   token: $slack-token
