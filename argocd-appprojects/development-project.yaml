@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: Development
+  name: development
   namespace: argocd
 spec:
   description: Project with full permissions
