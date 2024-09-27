@@ -3400,12 +3400,12 @@ argo-cd:
 
     # -- Contains centrally managed global application subscriptions
     ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/subscriptions/
-    subscriptions: [
+    subscriptions: 
       - recipients:
         - teams:argocd-channel
         triggers:
         - on-sync-succeeded
-    ]
+    
       # # subscription for on-sync-status-unknown trigger notifications
       # - recipients:
       #   - slack:test2
