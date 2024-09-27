@@ -3403,9 +3403,9 @@ argo-cd:
 
     # -- Contains centrally managed global application subscriptions
     ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/subscriptions/
-    subscriptions: 
-      triggers:
-        - on-sync-succeeded
+    subscriptions:
+      # triggers:
+      #   - on-sync-succeeded
     
       # # subscription for on-sync-status-unknown trigger notifications
       # - recipients:
@@ -3708,6 +3708,6 @@ argo-cd:
       #     when: app.status.operationState.phase in ['Succeeded']
       #
       # For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/triggers/#default-triggers
-      # defaultTriggers: |
-      #   - on-sync-status-unknown
+      defaultTriggers: |
+        - on-sync-succeeded
 
