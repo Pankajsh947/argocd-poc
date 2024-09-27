@@ -3267,9 +3267,6 @@ argo-cd:
     # @default -- See [values.yaml]
     ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/services/overview/
     notifiers: {
-      service.teams: |
-        recipientUrls:
-          argocd-channel: $channel-teams-url
     }
       # service.slack: |
       #   token: $slack-token
