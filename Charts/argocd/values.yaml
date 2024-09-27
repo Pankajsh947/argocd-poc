@@ -3669,13 +3669,13 @@ argo-cd:
 
     # -- The trigger defines the condition when the notification should be sent
     ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/triggers/
-    triggers: {
+    triggers: 
       trigger.on-sync-succeeded: |
         - description: Application syncing has succeeded
           send:
           - app-sync-succeeded
           when: app.status.operationState.phase in ['Succeeded']
-    }
+    
       # trigger.on-deployed: |
       #   - description: Application is synced and healthy. Triggered once per commit.
       #     oncePer: app.status.sync.revision
