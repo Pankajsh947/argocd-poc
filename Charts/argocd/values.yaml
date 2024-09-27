@@ -1732,7 +1732,6 @@ server:
       project: argocd
       source:
         helm:
-          version: v3
           releaseName: argocd
           valueFiles:
             - values.yaml
@@ -1749,7 +1748,7 @@ server:
         server: https://kubernetes.default.svc
       project: argocd
       source:
-        path: argocd-applications
+        path: ./argocd-applications
         repoURL: https://github.com/bukurt/argocd.git
         targetRevision: HEAD
         directory:
@@ -1766,7 +1765,7 @@ server:
         server: https://kubernetes.default.svc
       project: argocd
       source:
-        path: argocd-appprojects
+        path: ./argocd-appprojects
         repoURL: https://github.com/bukurt/argocd.git
         targetRevision: HEAD
         directory:
