@@ -8,7 +8,7 @@ metadata:
     argocd-image-updater.argoproj.io/image-list: 058264270539.dkr.ecr.us-east-1.amazonaws.com/argocd-test-app
     argocd-image-updater.argoproj.io/argocd-test-app.update-strategy: latest
 spec:
-  project: project1
+  project: Development
   source:
     repoURL: https://github.com/Pankajsh947/argocd-poc.git
     path: Charts/hello-world
