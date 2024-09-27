@@ -3268,7 +3268,8 @@ argo-cd:
     ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/services/overview/
     notifiers:
       service.teams: |
-        argocd-channel: $channel-teams-url
+        recipientUrls:
+          argocd-channel: $channel-teams-url
     
       # service.slack: |
       #   token: $slack-token
@@ -3403,10 +3404,10 @@ argo-cd:
     # -- Contains centrally managed global application subscriptions
     ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/subscriptions/
     subscriptions: 
-      - recipients:
-        - argocd-channel
-        triggers:
-        - on-sync-succeeded
+      # - recipients:
+      #   - argocd-channel
+      #   triggers:
+      #   - on-sync-succeeded
     
       # # subscription for on-sync-status-unknown trigger notifications
       # - recipients:
