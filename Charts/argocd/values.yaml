@@ -3404,7 +3404,7 @@ argo-cd:
     ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/subscriptions/
     subscriptions: 
       - recipients:
-        - teams:argocd-channel
+        - argocd-channel
         triggers:
         - on-sync-succeeded
     
