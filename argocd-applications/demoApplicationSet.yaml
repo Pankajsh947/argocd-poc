@@ -18,7 +18,7 @@ spec:
       name: '{{path}}-application'
 
     spec:
-      project: Development
+      project: development
       source:
         repoURL: https://github.com/Pankajsh947/argocd-poc.git
         targetRevision: HEAD
