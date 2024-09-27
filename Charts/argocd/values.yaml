@@ -3266,8 +3266,10 @@ argo-cd:
     # -- Configures notification services such as slack, email or custom webhook
     # @default -- See [values.yaml]
     ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/services/overview/
-    notifiers: {
-    }
+    notifiers:
+      service.teams: |
+        argocd-channel: $channel-teams-url
+    
       # service.slack: |
       #   token: $slack-token
 
@@ -3421,7 +3423,7 @@ argo-cd:
 
     # -- The notification template is used to generate the notification content
     ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/templates/
-    templates: {
+    templates:
       template.app-sync-succeeded: |
         teams:
           themeColor: "#000080"
@@ -3450,7 +3452,7 @@ argo-cd:
           title: Application {{.app.metadata.name}} has been successfully synced
           text: Application {{.app.metadata.name}} has been successfully synced at {{.app.status.operationState.finishedAt}}.
           summary: "{{.app.metadata.name}} sync succeeded"
-    }
+    
       # template.app-deployed: |
       #   email:
       #     subject: New version of an application {{.app.metadata.name}} is up and running.
