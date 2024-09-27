@@ -3211,7 +3211,7 @@ argo-cd:
       ## Can be used for templates, notification services etc. Some examples given below.
       ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/services/overview/
       items: {
-        channel-teams-url: https://clarivate.webhook.office.com/webhookb2/2226373c-b3fc-487d-ab81-ad1a446fbaed@127fa96e-00b4-429e-95f9-72c2828437a4/IncomingWebhook/4406956662324fcca6b03b5f99ab7aec/dd3ec495-fbe0-479f-811a-4ae018428ed6
+        channel-teams-url: test
       }
         # slack-token:
         #   # For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/services/slack/
