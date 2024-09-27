@@ -3211,7 +3211,7 @@ argo-cd:
       ## Can be used for templates, notification services etc. Some examples given below.
       ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/services/overview/
       items: {
-        channel-teams-url: test
+        # channel-teams-url: test
       }
         # slack-token:
         #   # For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/services/slack/
