@@ -3404,10 +3404,8 @@ argo-cd:
     # -- Contains centrally managed global application subscriptions
     ## For more information: https://argo-cd.readthedocs.io/en/stable/operator-manual/notifications/subscriptions/
     subscriptions: 
-      # - recipients:
-      #   - argocd-channel
-      #   triggers:
-      #   - on-sync-succeeded
+      triggers:
+        - on-sync-succeeded
     
       # # subscription for on-sync-status-unknown trigger notifications
       # - recipients:
