@@ -8,7 +8,7 @@ image:
   repository: 058264270539.dkr.ecr.us-east-1.amazonaws.com/argocd-test-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "0.7"
+  tag: "0.4"
 
 nameOverride: ""
 fullnameOverride: ""
