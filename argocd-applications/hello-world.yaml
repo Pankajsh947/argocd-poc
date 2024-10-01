@@ -7,6 +7,7 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/image-list: 058264270539.dkr.ecr.us-east-1.amazonaws.com/argocd-test-app
     argocd-image-updater.argoproj.io/argocd-test-app.update-strategy: latest
+    notifications.argoproj.io/subscribe.on-sync-succeeded.teams: argocd-channel
 spec:
   project: development
   source:
