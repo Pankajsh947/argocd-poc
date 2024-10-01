@@ -9,7 +9,7 @@ spec:
   generators:
     - list:
         elements:
-          - cluster: https://E041F0D0D9743B8356898CC01AFC1F94.gr7.us-east-1.eks.amazonaws.com
+          - cluster: https://339366CE694DE472810E7D0613DDC26A.gr7.us-east-1.eks.amazonaws.com
             path: app1
           - cluster:  https://kubernetes.default.svc
             path: app2
