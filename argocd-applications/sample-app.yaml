@@ -19,3 +19,9 @@ spec:
     automated:
       prune: false
       selfHeal: true
+  ignoreDifferences:
+  - group: apps
+    kind: Deployment
+    name: my-deployment
+    jqPathExpressions:
+      - .spec.template.spec.containers[0].image
